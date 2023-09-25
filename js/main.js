@@ -1,7 +1,7 @@
 const weatherBlock = document.querySelector(".weather");
 
 async function loadWeather(e) {
-  const server = "http://api.openweathermap.org/data/2.5/weather?q=ODESSA&units=metric&APPID=5d066958a60d315387d9492393935c19";
+  const server = "https://api.openweathermap.org/data/2.5/weather?q=ODESSA&units=metric&APPID=5d066958a60d315387d9492393935c19";
   const response = await fetch(server);
   const responseResult = await response.json();
   if (response.ok) {
